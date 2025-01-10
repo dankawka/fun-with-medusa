@@ -16,6 +16,9 @@ module.exports = defineConfig({
       | "shared"
       | "worker"
       | "server",
+    databaseDriverOptions: {
+      ssl: false,
+    },
   },
   admin: {
     disable: process.env.DISABLE_MEDUSA_ADMIN === "true",
